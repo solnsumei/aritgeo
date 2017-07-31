@@ -23,4 +23,39 @@ describe("aritGeo", () => {
 
     });
 
+    describe("handle valid input", () => {
+        it("should return 0 for an empty array []", () => {
+            assert.equal(myApp.aritGeo([]), 0);
+        });
+
+        it("should return -1 for an array with only one element [9]", () => {
+            assert.equal(myApp.aritGeo([9]), -1);
+        });
+
+        it("should return -1 for an array with only two elements [3, 6]", () => {
+            assert.equal(myApp.aritGeo([3, 6]), -1);
+        });
+
+        it("should return -1 for an array[2, 5, 7, 8]", () => {
+            assert.equal(myApp.aritGeo([2, 5, 7, 8]), -1);
+        });
+
+        it("should return Arithmetic for an arithmetic array [2, 4, 6, 8, 10]", () => {
+            assert.equal(myApp.aritGeo([2, 4, 6, 8, 10]), "Arithmetic");
+        });
+
+        it("should return Arithmetic for an arithmetic array [6, 3, 0]", () => {
+            assert.equal(myApp.aritGeo([6, 3, 0]), "Arithmetic");
+        });
+
+        it("should return Geometric for an geometric array [2, 4, 8, 16]", () => {
+            assert.equal(myApp.aritGeo([2, 4, 8, 16]), "Geometric");
+        });
+
+        it("should return Geometric for an geometric array [27, 9, 3]", () => {
+            assert.equal(myApp.aritGeo([27, 9, 3]), "Geometric");
+        });
+
+    });
+
 });
