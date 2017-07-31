@@ -9,5 +9,15 @@ module.exports = {
             return -1;
         }
 
+        //checking for an empty array
+        else if (value.length === 0) {
+            return 0;
+        }
+
+        // checking for an array with only one element
+        else if (value.length < 3) {
+            return -1;
+        }
+
     }
 };
