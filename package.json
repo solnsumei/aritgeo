@@ -1,0 +1,28 @@
+{
+  "name": "aritgeo",
+  "version": "1.0.0",
+  "description": "A Javascript function for checking if an array is an Arithmetic or Geometric progression",
+  "main": "src/main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solnsumei/aritgeo.git"
+  },
+  "keywords": [
+    "Javascript",
+    "Arithmetic",
+    "Geometric",
+    "Progression"
+  ],
+  "author": "Solomon Nsumei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solnsumei/aritgeo/issues"
+  },
+  "homepage": "https://github.com/solnsumei/aritgeo#readme"
+}
